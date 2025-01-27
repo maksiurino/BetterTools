@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "moar_tools",
+	"version": "${version}",
+	"name": "MOAR Tools",
+	"description": "An port of \"BetterTools\" datapack for mod!",
+	"authors": [
+		"Maksiurino"
+	],
+	"contact": {
+		"homepage": "https://github.com/maksiurino/",
+		"sources": "https://github.com/maksiurino/MOAR-Tools",
+		"discord": ""
+	},
+	"license": "MIT",
+	"icon": "assets/moar_tools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.maksiurino.moar_tools.MOARTools"
+		],
+		"client": [
+			"org.maksiurino.moar_tools.MOARToolsClient"
+		],
+		"fabric-datagen": [
+			"org.maksiurino.moar_tools.MOARToolsDataGenerator"
+		]
+	},
+	"mixins": [
+		"moar_tools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
